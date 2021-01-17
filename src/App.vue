@@ -151,6 +151,10 @@ export default {
 
           axios.post("http://127.0.0.1:8000/api/v1/user",this.formData).then((result)=>{
               console.log(result);
+
+              if(result.success){
+                  alert("done");
+              }
           }).catch((err)=>{
               console.log(err)
           });
